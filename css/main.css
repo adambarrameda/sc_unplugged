@@ -121,7 +121,7 @@ header nav {
 header nav ul {
   display: flex;
   justify-content: space-around;
-  width: 100%; 
+  width: 100%;
   margin: 0;
 }
 
@@ -356,15 +356,164 @@ aside h3 {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+/* Tablet Styles */
+@media only screen and (min-width: 768px) {
+
+  /* General styles */
+  .content-wrapper {
+    width: 640px;
+    margin: 100px 0;
+  }
+
+  /* Header */
+
+  header {
+    padding: 33px 0;
+  }
+
+
+  header .content-wrapper {
+    justify-content: space-between;
+  }
+
+  header nav {
+    width: 22%;
+  }
+
+  header nav ul {
+    width: 50%;
+  }
+
+  .header-divider {
+    display: none;
+  }
+
+  /* Aside */
+
+  aside .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+    margin: 50px 0;
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 40%;
+    margin: 0;
+  }
+
+  /* Features */
+
+  .features article {
+    width: 30%;
+  }
+
+  .features .features-item-description {
+    width: 100%;
+  }
+
+  /* Reviews */
+  .reviews article {}
+
+  /* reviews IMAGE next to div 50% */
+
+  .reviews article div {
+    width: 50%
+  }
+
+  /* Footer */
+  footer .content-wrapper {
+    width:
+      margin: 100px 0;
+  }
+
+  .footer-content {}
+
+  footer .contact {
+    margin-bottom: 0;
+  }
+
+  footer .copyright {
+    width:
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+@media only screen and (min-width: 1200px) {
+
+  .content-wrapper {
+    max-width: 960px;
+  }
+
+
+  header {
+    padding: 15px;
+  }
+
+  .content-wrapper {
+    max-width: 960px;
+  }
+
+  /* Hero */
+  .hero-area h1 {
+    width: 80%;
+  }
+
+  /* Aside */
+  aside .content-wrapper {
+    justify-content: space-around;
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 30%;
+  }
+
+  /* Features */
+  .features h2 {
+    width: 90%;
+  }
+
+  .features article {
+    flex-basis: 33%;
+  }
+
+  /* Reviews */
+  .reviews article div {
+    width: 42%;
+  }
+
+  /* ==========================================================================
+ About Page
+ ========================================================================== */
+  .mission h2,
+  .contact-section .content-wrapper h2 {
+    width: 95%;
+  }
+
+  /* ==========================================================================
+ FAQ Page
+ ========================================================================== */
+  .faq h2 {
+    width: 100%;
+  }
+
+}
 }
 
 /* ==========================================================================
@@ -374,6 +523,7 @@ aside h3 {
    ========================================================================== */
 
 @media print {
+
   *,
   *::before,
   *::after {
@@ -441,4 +591,3 @@ aside h3 {
     page-break-after: avoid;
   }
 }
-
