@@ -361,7 +361,7 @@ aside h3 {
 
   /* General styles */
   .content-wrapper {
-    width: 640px;
+    max-width: 640px;
     margin: 100px 0;
   }
 
@@ -373,15 +373,16 @@ aside h3 {
 
 
   header .content-wrapper {
+    width: 100%;
     justify-content: space-between;
   }
 
   header nav {
-    width: 22%;
+    width: 20%;
   }
 
   header nav ul {
-    width: 50%;
+    justify-content: space-between;
   }
 
   .header-divider {
@@ -406,51 +407,87 @@ aside h3 {
   /* Features */
 
   .features article {
-    width: 30%;
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    flex-basis: 50%;
   }
 
   .features .features-item-description {
-    width: 100%;
+    width: 62%;
   }
 
   /* Reviews */
-  .reviews article {}
+  .reviews article {
+    display: flex;
+    justify-content: space-between;
+  }
 
   /* reviews IMAGE next to div 50% */
 
   .reviews article div {
-    width: 50%
+    width: 49%;
   }
 
   /* Footer */
   footer .content-wrapper {
-    width:
-      margin: 100px 0;
+    width: 65%;
   }
 
-  .footer-content {}
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
   footer .contact {
     margin-bottom: 0;
   }
 
   footer .copyright {
-    width:
+    width: 100%;
   }
 
+  /* ==========================================================================
+   About Page
+   ========================================================================== */
 
+  .mission-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 20px;
+  }
 
+  .mission-content p {
+    width: 45%;
+  }
 
+  .contact-section .content-wrapper h2 {
+    width: 80%;
+  }
 
+  .contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 
+  /* ==========================================================================
+   FAQ Page
+   ========================================================================== */
 
+  .faq .content-wrapper {
+    justify-content: space-between;
+  }
 
+  .faq-content {
+    flex-basis: 45%;
+  }
 
-
-
-
-
-
+  .faq h2 {
+    width: 100%;
+  }
 
 }
 
@@ -513,7 +550,6 @@ aside h3 {
     width: 100%;
   }
 
-}
 }
 
 /* ==========================================================================
